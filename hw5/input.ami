@@ -1,0 +1,250 @@
+.static_data 2
+
+
+# Method f in Class input begin
+l17_f_8:
+    move_immed_i t3, 2
+    halloc t2, t3
+    move_immed_i t4, 0
+    move_immed_i t5, 1
+    save a0
+    save a1
+    save a2
+    save t0
+    save t1
+    save t2
+    save t3
+    save t4
+    save t5
+    move a0, t2
+    move a1, t4
+    move a2, t5
+    call l13_C_1
+    move t6, a0
+    restore t5
+    restore t4
+    restore t3
+    restore t2
+    restore t1
+    restore t0
+    restore a2
+    restore a1
+    restore a0
+    move t0, t6
+    move t7, t6
+    move_immed_i t9, 0
+    move_immed_i t12, 2
+    save a0
+    save a1
+    save t0
+    save t1
+    save t2
+    save t3
+    save t4
+    save t5
+    save t6
+    save t7
+    save t8
+    save t9
+    save t10
+    save t11
+    save t12
+    move a0, t11
+    move a1, t12
+    call l15_stm_7
+    move t13, a0
+    restore t12
+    restore t11
+    restore t10
+    restore t9
+    restore t8
+    restore t7
+    restore t6
+    restore t5
+    restore t4
+    restore t3
+    restore t2
+    restore t1
+    restore t0
+    restore a1
+    restore a0
+    hstore sap, t9, t13
+    move t14, t13
+    move a0, t0
+    ret
+
+# Method Main in Class input begin
+l19_Main_9:
+    move_immed_i t4, 23
+    halloc t3, t4
+    move t5, t4
+    move_immed_i t8, 1
+    move_immed_i t7, 0
+    igt t6, t5, t7
+    bz t6, l26_alloc_end
+# begin of alloc an array
+l25_alloc_begin:
+    isub t5, t5, t8
+    move t9, t3
+    iadd t9, t9, t5
+    move_immed_i t10, 22
+    halloc t9, t10
+    bz t5, l26_alloc_end
+l29_array_alloc_m:
+    jmp l25_alloc_begin
+# end of alloc an array
+l26_alloc_end:
+    move t1, t3
+    move t11, t3
+    move t12, a0
+    move t13, a0
+    move_immed_i t14, 0
+    move_immed_i t15, 1
+    save a0
+    save a1
+    save a2
+    save t0
+    save t1
+    save t2
+    save t3
+    save t4
+    save t5
+    save t6
+    save t7
+    save t8
+    save t9
+    save t10
+    save t11
+    save t12
+    save t13
+    save t14
+    save t15
+    move a0, t13
+    move a1, t14
+    move a2, t15
+    call l17_f_8
+    move t16, a0
+    restore t15
+    restore t14
+    restore t13
+    restore t12
+    restore t11
+    restore t10
+    restore t9
+    restore t8
+    restore t7
+    restore t6
+    restore t5
+    restore t4
+    restore t3
+    restore t2
+    restore t1
+    restore t0
+    restore a2
+    restore a1
+    restore a0
+    move_immed_i t18, 1
+    iadd t17, t16, t18
+    hload t19, t16, t18
+    move_immed_i t20, 2
+    save a0
+    save a1
+    save a2
+    save t0
+    save t1
+    save t2
+    save t3
+    save t4
+    save t5
+    save t6
+    save t7
+    save t8
+    save t9
+    save t10
+    save t11
+    save t12
+    save t13
+    save t14
+    save t15
+    save t16
+    save t17
+    save t18
+    save t19
+    save t20
+    move a0, t12
+    move a1, t19
+    move a2, t20
+    call l17_f_8
+    move t21, a0
+    restore t20
+    restore t19
+    restore t18
+    restore t17
+    restore t16
+    restore t15
+    restore t14
+    restore t13
+    restore t12
+    restore t11
+    restore t10
+    restore t9
+    restore t8
+    restore t7
+    restore t6
+    restore t5
+    restore t4
+    restore t3
+    restore t2
+    restore t1
+    restore t0
+    restore a2
+    restore a1
+    restore a0
+    move_immed_i t22, 1
+    move t0, t22
+    move t23, t22
+    ret
+
+# Constructor of input Begin
+l21_C_2:
+    ret
+
+# Method stm in Class objc begin
+l15_stm_7:
+    move_immed_i t1, 2
+    move a0, t1
+    ret
+
+# Constructor of objc Begin
+l13_C_1:
+    move_immed_i t2, 0
+    iadd t1, a0, t2
+    hstore a0, t2, a1
+    move t4, a1
+    move_immed_i t6, 1
+    iadd t5, a0, t6
+    hstore a0, t6, a2
+    move t8, a2
+    ret
+
+# Constructor of objc Begin
+l23_C_3:
+    ret
+
+# Method print in Class Out begin
+l5_print_3:
+
+# Method print in Class Out begin
+l7_print_4:
+
+# Method print in Class Out begin
+l9_print_5:
+
+# Method print in Class Out begin
+l11_print_6:
+
+# Method scan_int in Class In begin
+l1_scan_int_1:
+
+# Method scan_float in Class In begin
+l3_scan_float_2:

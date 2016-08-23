@@ -1,0 +1,28 @@
+class objc {
+	public int k;
+	public int b;
+	public static int st1;
+	public objc(int a, int c){
+		k = a;
+		b = c;
+	}
+	public static int stm(int a) {
+		return 2;
+	}
+}
+class input {
+	public static int st2;
+	public objc f(int a, int b) {
+		objc t;
+		t = new objc(0,1);
+		objc.st1 = objc.stm(2); 
+		return t;
+	}
+	public void Main() {
+		int i;
+		int arr[][][];
+		arr = new int[23][22][];
+		f(this.f(0,1).b, 2);
+		i = 1;
+	}
+}

@@ -1,0 +1,55 @@
+class A {
+	public int p, j, a;
+	A(int a, int b) {
+		
+	}
+	public A get(float a, float b) {
+	}
+	public static int get(float a, float b) {
+		return 1;
+	}
+}
+class B extends A {
+	int p, j;
+	B(int a, int b) {
+	}
+	public float get(float a, float b) {
+	}
+	public int get(float a, int b) {
+	}
+}
+class C extends B {
+	float p, j;
+	C(float a, int b) {
+		return;
+	}
+	C(int a, float b) {
+		return;
+	}
+	B get() {
+		float i, j[][][];
+		j = new float[3][][][];
+		j[0] = new float[2][2];
+		A cc;
+		cc = new C(0, 1.0);
+		for(i = 0 + 1.0; i < 10 && 1 != 1.0 || 5 + 10 > 3; i++) {
+		}
+		if(3 > 10) {
+			i = B.get(1.0, 1.0);
+		} else {
+			i = 1;
+		}
+		while(3 > 10) {
+		}
+		i = get().get(1, 0);
+		a = B.get(1, 1);
+		C t;
+
+		t.get(1.0, 1.0);
+		t.get(1, 1);
+		float c;
+		int b;
+		b = t.get(1, 1);
+		return t;
+	}
+}
